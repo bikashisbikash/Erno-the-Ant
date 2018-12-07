@@ -5,13 +5,12 @@
 #ifndef ERNO_H
 #define ERNO_H
 
-
 const int WORLD_SIZE = 15;
 
-class Erno
-  {
+class Erno{
   public:
-          Erno ();
+          Erno();
+    void printMoveCount();
     bool  moveErno (char direction);  // given a direction (NSWE) determines which private function needs to be called
 					// also checks for a valid character.
 					// returns true if move can be made
